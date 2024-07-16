@@ -1,9 +1,14 @@
-name: Build
+name: goreleaser
 
 on:
+  pull_request:
   push:
-    branches:
-      - 'main'
+    tags:
+      - "*"
+
+permissions:
+  contents: write
+  packages: write
 
 env:
   PLATFORMS: linux/amd64,linux/arm64
