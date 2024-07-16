@@ -16,6 +16,10 @@ builds:
     goarch:
       - amd64
       - arm64
+    flags:
+      - -trimpath
+    ldflags:
+      - -w -s -extldfalgs='-static'
 
 dockers:
   - image_templates:
