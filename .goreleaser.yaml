@@ -19,7 +19,7 @@ builds:
     flags:
       - -trimpath
     ldflags:
-      - -w -s -extldfalgs='-static'
+      - -w -s -extldflags='-static'
 
 dockers:
   - image_templates:
