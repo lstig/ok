@@ -29,7 +29,7 @@ dockers:
     build_flag_templates:
       - --platform=linux/amd64
       - --label=org.opencontainers.image.title={{ .ProjectName }}
-      - --label=org.opencontainers.image.description="Simple HTTP that responds 'ok'"
+      - --label=org.opencontainers.image.description="Simple HTTP server that responds 'ok'"
       - --label=org.opencontainers.image.url=https://github.com/lstig/{{ .ProjectName }}
       - --label=org.opencontainers.image.source=https://github.com/lstig/{{ .ProjectName }}
       - --label=org.opencontainers.image.version={{ .Version }}
@@ -43,7 +43,7 @@ dockers:
     build_flag_templates:
       - --platform=linux/arm64
       - --label=org.opencontainers.image.title={{ .ProjectName }}
-      - --label=org.opencontainers.image.description="Simple HTTP that responds 'ok'"
+      - --label=org.opencontainers.image.description="Simple HTTP server that responds 'ok'"
       - --label=org.opencontainers.image.url=https://github.com/lstig/{{ .ProjectName }}
       - --label=org.opencontainers.image.source=https://github.com/lstig/{{ .ProjectName }}
       - --label=org.opencontainers.image.version={{ .Version }}
