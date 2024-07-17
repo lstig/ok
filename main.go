@@ -24,5 +24,7 @@ func main() {
 			log.Fatal(err)
 		}
 	})
+
+	log.Printf("listening on %s for requests to %s", opts.listen, opts.path)
 	log.Fatal(http.ListenAndServe(opts.listen, nil))
 }
